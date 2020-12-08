@@ -1,9 +1,11 @@
 import React from 'react'
 import { Card, Button } from 'semantic-ui-react'
+import { Jumbotron } from 'reactstrap';
 
 export default function WalkList(props) {
 console.log(props.walks)
   const walks = props.walks.map(walk => {
+
     return (
       <Card key={walk.id} color={"red"}>
         <Card.Content textAlign={"center"}>
@@ -28,21 +30,21 @@ console.log(props.walks)
         </Card.Content>
         <Card.Content textAlign={"center"}>
           <Button
-            basic color='red'
+            color='red'
             onClick={ ()=> props.deleteWalk(walk.id) }
           >
             Delete {walk.name}
           </Button>
           <Button
-            basic color='green'
+            color='blue'
             onClick={ ()=> props.editWalk(walk.id) }
           >
             Edit {walk.name}
           </Button>
         </Card.Content>
       </Card>
-
     )
+
   })
 
   return (
@@ -50,4 +52,14 @@ console.log(props.walks)
       {walks}
     </Card.Group>
   )
+
 }
+
+<div class="jumbotron">
+  <h1>Hello, world!</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</p>
+
+
+  <p><a class="btn btn-primary" href="#">Learn more</a></p>
+
+</div>

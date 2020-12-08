@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { Form, Button, Label } from 'semantic-ui-react'
+import { Form, Label } from 'semantic-ui-react'
 import '../index.css'
 //import { Button } from 'reactstrap'
 import { Container, Col, Row, ListGroup, ListGroupItem, Table,  Card, CardImg, CardText, CardBody,
-  CardTitle, CardDeck, CardSubtitle } from 'reactstrap'
+  CardTitle, CardDeck, CardSubtitle, Button, UncontrolledCollapse } from 'reactstrap'
 
 export default class LoginRegisterForm extends Component {
 
@@ -52,6 +52,12 @@ handleSubmit = (event) => {
   render() {
     return (
       <React.Fragment>
+
+      <Button color="primary" id="toggler" style={{ marginBottom: '1rem' }}>
+      Create Your Walk
+      </Button>
+      <UncontrolledCollapse toggler="#toggler">
+
         <h2>{this.state.action} here</h2>
         <Form onSubmit={this.handleSubmit}>
         {
@@ -86,7 +92,7 @@ handleSubmit = (event) => {
             value={this.state.password}
             onChange={this.handleChange}
           />
-          <Button type="Submit">
+          <Button class="btn btn-primary" type="Submit">
             { this.state.action === "Login" ? "Log in" : "Sign up"}
           </Button>
         </Form>
@@ -102,12 +108,13 @@ handleSubmit = (event) => {
             Already have an account? Log in <span className="fake-link" onClick={this.switchForm}>here</span>.
           </p>
         }
+        </UncontrolledCollapse>
 
         <body class = "container">
         <h1>Making a Gravel or Mulch Walk</h1>
         <div class="row">
           <div class="col-sm">
-            <p>Gravel and mulch are good choices for a casual or lightly traveled walk. Bricks, timbers, or other edging help keep the surface from spreading into the lawn. Flooding can be a problem, so pick a dry spot, and lay 1- to 2-inch layer of sand in the excavation fro drainage. Cover it with landscape fabric to prevent sand from working into the gravel or mulch and to keep weeds out. Add a 4-inch layer of gravel or mulch and tamp for a firm surface.</p>
+            <p>Gravel and mulch are good choices for a casual or lightly traveled walk. Bricks, timbers, or other edging help keep the surface from spreading into the lawn. Flooding can be a problem, so pick a dry spot, and lay 1- to 2-inch layer of sand in the excavation for drainage. Cover it with landscape fabric to prevent sand from working into the gravel or mulch and to keep weeds out. Add a 4-inch layer of gravel or mulch and tamp for a firm surface.</p>
           </div>
           <div class="col-sm">
             <p>Combining materials, such as concrete, brick, or wood, with the mulch or gravel can create interesting options or patterns. </p>

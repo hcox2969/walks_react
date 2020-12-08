@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
-import { Form, Button, Label, Segment, Modal, Header, Dropdown } from 'semantic-ui-react'
+import { Form, Label, Segment, Modal, Header, Dropdown } from 'semantic-ui-react'
 import DropDownTools from '../DropDowns/tools.js'
 import DropDownMaterials from '../DropDowns/materials.js'
 import DropDownEdging from '../DropDowns/edging.js'
 import DropDownPath from '../DropDowns/path.js'
+import { Button } from 'reactstrap'
+
 
 export default class NewWalkForm extends Component {
   constructor(props) {
@@ -67,7 +69,7 @@ export default class NewWalkForm extends Component {
           <Label>Decorative Path:</Label>
           <DropDownPath />
 
-          <Button type="Submit">Create Your New Walk</Button>
+          <Button class="btn btn-primary" type="Submit">Create Your New Walk</Button>
         </Form>
       </Segment>
     )
