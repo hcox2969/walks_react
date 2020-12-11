@@ -3,6 +3,7 @@ import { Dropdown } from 'semantic-ui-react'
 
 const toolsOptions = [
   {
+    name: "Shovel",
     key: 'Shovel',
     value: 'Shovel',
     text: 'Shovel'
@@ -71,6 +72,7 @@ const DropDownTools = () => (
     multiple
     selection
     options={toolsOptions}
+    name='tools'
   />
 )
 export default DropDownTools

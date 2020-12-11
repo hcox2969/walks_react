@@ -21,7 +21,7 @@ const pathOptions = [
 
 const DropDownPath = () => (
   <Dropdown
-    placeholder='Select Tools from the list'
+    placeholder='Select Path from the list'
     fluid
     search
     selection

@@ -92,7 +92,7 @@ handleSubmit = (event) => {
             value={this.state.password}
             onChange={this.handleChange}
           />
-          <Button class="btn btn-primary" type="Submit">
+          <Button className="btn btn-primary" type="Submit">
             { this.state.action === "Login" ? "Log in" : "Sign up"}
           </Button>
         </Form>
@@ -110,23 +110,23 @@ handleSubmit = (event) => {
         }
         </UncontrolledCollapse>
 
-        <body class = "container">
+        <div className="container">
         <h1>Making a Gravel or Mulch Walk</h1>
-        <div class="row">
-          <div class="col-sm">
+        <div className="row">
+          <div className="col-sm">
             <p>Gravel and mulch are good choices for a casual or lightly traveled walk. Bricks, timbers, or other edging help keep the surface from spreading into the lawn. Flooding can be a problem, so pick a dry spot, and lay 1- to 2-inch layer of sand in the excavation for drainage. Cover it with landscape fabric to prevent sand from working into the gravel or mulch and to keep weeds out. Add a 4-inch layer of gravel or mulch and tamp for a firm surface.</p>
           </div>
-          <div class="col-sm">
+          <div className="col-sm">
             <p>Combining materials, such as concrete, brick, or wood, with the mulch or gravel can create interesting options or patterns. </p>
           </div>
-          <div class="col-sm">
+          <div className="col-sm">
             <p>At its simplest, a walk is nothing more than some gravel or mulch spread on the ground. The walk shown here is a bit more durable. Edging keeps the surface from spreading into your yard. Sand provides a sturdy base that can easily be smoothed flat. If you want a mulch walk, bark mulch is less prone to rot and fungus. If you are building a gravel walk, pea gravel and crushed stone make good walking surfaces. Check with your local building supplier. Some types of gravel and stone are available only in certain areas of the country. </p>
           </div>
           <div>
-            <img src="/Pictures/001.png" class="img-fluid" alt=""/>
+            <img src="/Pictures/001.png" className="img-fluid" alt=""/>
           </div>
         </div>
-        </body>
+        </div>
         <div>
           <h1><small>Installing Edging</small></h1>
         </div>

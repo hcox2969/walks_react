@@ -10,8 +10,8 @@ export default class EditWalkModal extends Component {
       name: props.walkToEdit.name,
       tools: props.walkToEdit.tools,
       materials: props.walkToEdit.materials,
-      edging: props.walkToEdit.materials,
-      path: props.walkToEdit.materials
+      edging: props.walkToEdit.edging,
+      path: props.walkToEdit.path
 
     }
   }

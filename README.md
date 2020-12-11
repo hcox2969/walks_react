@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Outdoor Walks Capstone Project
+## A link to the hosted working app:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://outdoor-walks.herokuapp.com/
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+A home improvement app that accurately guides a user into how to build an outdoor walk and helps calculate the cost of materials and tools for the project .
+What was your motivation to build this project? Why this? What problem does it solve?
+	- outdoor building projects can be both fun and satisfying.
+	- economic rewards — increases the home value
+	- when hiring an hourly worker from thumbtack.com: know what materials you need to buy ahead of time and how much they would be.
 
-### `npm start`
+## A list of technologies used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Flask/React, Heroku, Semantic-ui-react, Reactstrap, Postman
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## A list of installation steps:
 
-### `npm test`
+### Back end (Flask, python):
+- start the terminal
+- . venv/bin/activate
+- pip3 i
+- pip3 freeze > requirements.txt
+- python3 app.py
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Front end (React):
+- open a separate terminal window
+- npm install
+- npm run start
 
-### `npm run build`
+### link to user stories - who are your users, what do they want, and why?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Users for this app are people who enjoy outdoor projects, professionally or not.
+The app contains the steps necessary to build an outdoor mulch or gravel walk,
+as well as tips on installation of edging and designer decorative path ideas.
+The user option includes all the necessary tools and materials needed to build the walk
+and the user can select these tools from the drop-down menu. There is also
+a way to create a new walk that would contain the walk name, tools, materials,
+type of edging and decorative path.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Unsolved problems and future features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Have a page where a user could see all of others walks
+Allow for a user to save their favorites
+Add option for different types of walks ( different templates?? )
+Add pics for their walks ( use a link first of the image hosted elsewhere to just get that displayed )
+like functionality for walks
+More resources

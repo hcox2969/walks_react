@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import { Form, Label, Segment, Modal, Header, Dropdown } from 'semantic-ui-react'
+import { Form, Label, Segment, Modal, Header, Button, Dropdown } from 'semantic-ui-react'
 import DropDownTools from '../DropDowns/tools.js'
 import DropDownMaterials from '../DropDowns/materials.js'
 import DropDownEdging from '../DropDowns/edging.js'
 import DropDownPath from '../DropDowns/path.js'
-import { Button } from 'reactstrap'
+
 
 
 export default class NewWalkForm extends Component {
@@ -22,8 +22,9 @@ export default class NewWalkForm extends Component {
   }
 
   handleChange = (event) => {
-    // console.log(event.target.name)
-    // console.log(event.target.value)
+    //console.log(event.target.name)
+    //console.log(event.target.value)
+    //console.log(event)
     this.setState({
       [event.target.name]: event.target.value
     })
@@ -45,9 +46,9 @@ export default class NewWalkForm extends Component {
     })
 
   }
-
-
-  render()  {
+  render() {
+    //console.log("New Walk form")
+    //console.log(this.state)
     return (
       <Segment>
         <h4> Create your new walk:</h4>
@@ -61,15 +62,14 @@ export default class NewWalkForm extends Component {
             onChange={this.handleChange}
           />
           <Label>Tools:</Label>
-          <DropDownTools />
+          <DropDownTools name="tools"/>
           <Label>Materials:</Label>
           <DropDownMaterials />
           <Label>Edging:</Label>
           <DropDownEdging />
           <Label>Decorative Path:</Label>
           <DropDownPath />
-
-          <Button class="btn btn-primary" type="Submit">Create Your New Walk</Button>
+          <Button type="Submit">Create Your New Walk</Button>
         </Form>
       </Segment>
     )
